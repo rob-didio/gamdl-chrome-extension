@@ -16,7 +16,7 @@ A Chrome extension for downloading Apple Music tracks using [gamdl](https://gith
 
 - **Google Chrome** (or Chromium-based browser)
 - **Python 3.8+**
-- **gamdl** - `pip install gamdl`
+- **gamdl** with `--non-interactive` support - This extension requires a version of gamdl that supports the `--non-interactive` flag (not yet in the official release). You'll need to install from a fork or branch that includes this feature.
 - **ffmpeg** - For audio processing
 - **Apple Music cookies** - Exported from your browser
 
