@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>gamdl</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>gamdl</h1>
+    </div>
+
+    <div id="content">
+      <div id="not-apple-music" class="message hidden">
+        <p>Navigate to Apple Music to download</p>
+      </div>
+
+      <div id="loading" class="message hidden">
+        <span class="spinner"></span>
+        <p>Loading...</p>
+      </div>
+
+      <div id="apple-music-detected" class="hidden">
+        <div class="info">
+          <span id="content-type" class="badge">Album</span>
+          <p id="page-title" class="title">Loading...</p>
+        </div>
+
+        <!-- Item selection list (for artists/albums) -->
+        <div id="items-section" class="hidden">
+          <div class="items-header">
+            <button id="select-all-btn" class="select-btn">Select All</button>
+            <span id="selection-count" class="selection-count">0 selected</span>
+          </div>
+          <div id="items-list" class="items-list"></div>
+        </div>
+
+        <!-- Format toggle -->
+        <div class="format-toggle">
+          <label class="toggle-label">
+            <input type="checkbox" id="alac-toggle">
+            <span class="toggle-switch"></span>
+            <span class="toggle-text">Lossless (ALAC)</span>
+          </label>
+        </div>
+
+        <button id="download-btn" class="download-btn">
+          <span class="btn-text">Download</span>
+          <span class="btn-loading hidden">
+            <span class="spinner"></span>
+            Downloading...
+          </span>
+        </button>
+
+        <!-- Download progress section -->
+        <div id="progress-section" class="progress-section hidden">
+          <div id="progress-tracks" class="progress-tracks"></div>
+        </div>
+
+        <div id="status" class="status hidden"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

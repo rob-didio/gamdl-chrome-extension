@@ -1,0 +1,17 @@
+# Local development files
+*.log
+*.pyc
+__pycache__/
+
+# Native host manifest (contains local paths)
+native-host/com.gamdl.host.json
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.idea/
+.vscode/
+*.swp
+*.swo
