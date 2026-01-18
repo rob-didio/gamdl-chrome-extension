@@ -2,6 +2,8 @@
 
 A Chrome extension for downloading Apple Music tracks using [gamdl](https://github.com/glomatico/gamdl).
 
+![Screenshot](readme_imgs/image.png)
+
 ## Features
 
 - Download songs, albums, playlists, and artist discographies
